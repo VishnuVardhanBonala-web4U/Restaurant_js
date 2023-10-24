@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Shop-App</title>
+    </head>
+
+    <body onload="loading()">
+        <div class="loading">
+            <h2>Loading <b class="dot">........</b>
+            </h2>
+        </div>
+        <div class="shop-value">
+            Total Shop Value :<span class="total-value"></span>
+        </div>
+        <h2 class="heading">Our <b>Shop</b></h2>
+        <div class="filter">
+            <button onclick="filterByCategory('ALL')">ALL</button>
+            <button onclick="filterByCategory('cakes')">Cakes</button>
+            <button onclick="filterByCategory('cup cakes')">Cup Cakes</button>
+            <button onclick="filterByCategory('drinks')">Drinks</button>
+        </div>
+
+        <div class="searchbar"><input type="search" placeholder="search Items" onkeydown="filterItem()"
+                onkeyup="filterItem()" id="filterItem"></div>
+        <div class="items">
+
+
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
